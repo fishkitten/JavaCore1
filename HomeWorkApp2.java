@@ -7,6 +7,12 @@ public class HomeWorkApp2 {
 		boolean isNegative = isNegative(0);
 		System.out.println(isNegative);
 		printNTimes("A", 5);
+		System.out.println(year(4));
+		System.out.println(year(400));
+		System.out.println(year(100));
+		System.out.println(year(200));
+		System.out.println(year(1203));
+		System.out.println(year(1200));
 	}	
 	
 	private static boolean checkSum(int k, int d) {
@@ -34,6 +40,10 @@ public class HomeWorkApp2 {
 		for (int i = 0; i < n; i++) {
 			System.out.println(s);
 		}
+	}
+	
+	private static boolean year(int y) {
+		return y % 400 == 0 || (y % 100 != 0 && y % 4 == 0);
 	}
 }
 
