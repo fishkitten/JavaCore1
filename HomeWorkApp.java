@@ -7,9 +7,9 @@ public class HomeWorkApp {
 	}
 	
 	private static void printThreeWords() {
-		System.out.println("_Orange");
-		System.out.println ("_Banana");
-		System.out.println ("_Apple");
+		System.out.println("Orange");
+		System.out.println("Banana");
+		System.out.println("Apple");
 	}
 	
 	private static void checkSumSign() {
