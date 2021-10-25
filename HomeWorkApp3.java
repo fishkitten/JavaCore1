@@ -5,6 +5,8 @@ public class HomeWorkApp3 {
 		task1();
 		task2();
 		task3();
+		System.out.println(Arrays.toString(task5(9, -100)));
+		task4();
 	}
 	
 	public static void task1() {
@@ -35,5 +37,33 @@ public class HomeWorkApp3 {
 			}
 		}
 		System.out.println(Arrays.toString(numbers));
+	}
+	
+	public static void task4() {
+		int[][] square = new int[5][5];
+		for(int i = 0; i < square.length; i++) {
+			for(int j = 0; j < square[i].length; j++) {
+				if (i == j) {
+					square[i][j] = 1;
+				} else if (i + j == 4) {
+					square[i][j] = 1;
+				}
+			}	
+		}
+		print2DArray(square);
+	}
+	
+	public static int[] task5(int len, int initialValue) {
+		int[] numbers = new int[len];
+		for(int i = 0; i < numbers.length; i++) {
+			numbers[i] = initialValue;
+		}
+		return numbers;
+	}
+	
+	private static void print2DArray(int[][] arr) {
+		for (int i = 0, n = arr.length; i < n; i++) {
+			System.out.println(Arrays.toString(arr[i]));
+		}			
 	}
 }
